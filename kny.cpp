@@ -26,8 +26,8 @@ cout << "[Scene 1] Power Classification" << endl;
 cout << "[Scene 2] The Infinity Castle Gate" << endl;
 cout << "[Scene 3] Battle Strategy" << endl;
 cout << "[Scene 4] Final Outcome" << endl;
-cout << "Note: Enter all parameters on the same line, separated by spaces. (Example: 8 950 0.8 1 N 1 3 72.5 2 420 380 1)" << endl;
 cout << "Syntax: slayerLevel | hp | breathingMastery | hasTalisman | timeOfDay | demonPresence | demonRank | swordSharpness | allyCount | bossHP | totalDamage | specialMoveReady" << endl;
+cout << "Example: 8 950 0.8 1 N 1 3 72.5 2 420 380 1" << endl;
 
 int exit;
 
