@@ -55,11 +55,11 @@ else
 // Scene 2: The Infinity Castle Gate
 if (hasTalisman == 0)
 {
-    gate = "Denied: No talisman.";
+    gate = "Denied: No talisman";
 }
 else if (timeOfDay != 'N' && timeOfDay != 'D')
 {
-    gate = "Warning: invalid timeOfDay.";
+    gate = "Warning: invalid timeOfDay";
 }
 else if (timeOfDay == 'N' && demonPresence == 1)
 {
@@ -99,10 +99,10 @@ else
     out = "Withdraw to heal.";
 }
 
-cout << "[Scene 1] Rank: " << rank << "(power = " << fixed << setprecision(1) << power << ")" << endl;
+cout << "[Scene 1] Rank: " << rank << " (power = " << fixed << setprecision(1) << power << ")" << endl;
 cout << "[Scene 2] Open " << gate << "." << endl;
-cout << "[Scene 3] " << strat << "(adv = " << fixed << setprecision(1) << adv << ")" << endl;
-cout << "[Scene 4] " << out << "(finalHP = " << finalHP << ")" << endl;
+cout << "[Scene 3] " << strat << " (adv = " << fixed << setprecision(1) << adv << ")" << endl;
+cout << "[Scene 4] " << out << " (finalHP = " << finalHP << ")" << endl;
 
 return 0;
 }
