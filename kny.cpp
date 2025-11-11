@@ -40,6 +40,8 @@ cin >> slayerLevel >> hp >> breathingMastery >> hasTalisman >> timeOfDay >> demo
 
 double power = slayerLevel * 10 + hp / 10 + breathingMastery * 50, adv = (101 - demonRank * 15) + swordSharpness * 0.4 + allyCount * 5;
 
+finalHP = bossHP - totalDamage;
+
 // Scene 1: Power Classification
 if (power >= 120)
 {
