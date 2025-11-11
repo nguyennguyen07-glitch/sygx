@@ -29,13 +29,14 @@ cout << "[Scene 4] Final Outcome" << endl;
 cout << "Note: Enter all parameters on the same line, separated by spaces. (Example: 8 950 0.8 1 N 1 3 72.5 2 420 380 1)" << endl;
 cout << "Syntax: slayerLevel | hp | breathingMastery | hasTalisman | timeOfDay | demonPresence | demonRank | swordSharpness | allyCount | bossHP | totalDamage | specialMoveReady" << endl;
 
+int exit;
+
 int slayerLevel, hp, hasTalisman, demonPresence, demonRank, allyCount, bossHP, totalDamage, specialMoveReady, finalHP;
 double breathingMastery, swordSharpness;
 char timeOfDay;
 string rank, gate, strat, out;
 
-cin >> slayerLevel >> hp >> breathingMastery >> hasTalisman >> timeOfDay >> demonPresence >> demonRank
->> swordSharpness >> allyCount >> bossHP >> totalDamage >> specialMoveReady;
+cin >> slayerLevel >> hp >> breathingMastery >> hasTalisman >> timeOfDay >> demonPresence >> demonRank >> swordSharpness >> allyCount >> bossHP >> totalDamage >> specialMoveReady;
 
 double power = slayerLevel * 10 + hp / 10 + breathingMastery * 50, adv = (101 - demonRank * 15) + swordSharpness * 0.4 + allyCount * 5;
 
@@ -105,6 +106,6 @@ cout << "[Scene 2] Open " << gate << "." << endl;
 cout << "[Scene 3] " << strat << " (adv = " << fixed << setprecision(1) << adv << ")" << endl;
 cout << "[Scene 4] " << out << " (finalHP = " << finalHP << ")" << endl;
 
-cin;
+cin >> exit;
 return 0;
 }
