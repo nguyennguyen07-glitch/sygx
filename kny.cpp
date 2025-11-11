@@ -105,6 +105,6 @@ cout << "[Scene 2] Open " << gate << "." << endl;
 cout << "[Scene 3] " << strat << " (adv = " << fixed << setprecision(1) << adv << ")" << endl;
 cout << "[Scene 4] " << out << " (finalHP = " << finalHP << ")" << endl;
 
-cin.get();
+cin;
 return 0;
 }
