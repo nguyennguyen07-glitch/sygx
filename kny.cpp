@@ -60,17 +60,20 @@ if (hasTalisman == 0)
 {
     gate = "Denied: No talisman";
 }
-else if (timeOfDay != 'N' && timeOfDay != 'D')
-{
-    gate = "Warning: invalid timeOfDay";
-}
-else if (timeOfDay == 'N' && demonPresence == 1)
-{
-    gate = "Open silently";
-}
 else
 {
-    gate = "Opencautiously";
+    if (timeOfDay != 'N' && timeOfDay != 'D')
+    {
+        gate = "Warning: invalid timeOfDay";
+    }
+    else if (timeOfDay == 'N' && demonPresence == 1)
+    {
+        gate = "Open silently";
+    }
+    else
+    {
+        gate = "Opencautiously";
+    }
 }
 
 // Scene 3: Battle Strategy
