@@ -72,7 +72,7 @@ else
     }
     else
     {
-        gate = "Opencautiously";
+        gate = "Open cautiously";
     }
 }
 
