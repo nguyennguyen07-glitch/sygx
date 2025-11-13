@@ -29,8 +29,7 @@ cout << "[Scene 4] Final Outcome" << endl;
 cout << "Syntax: slayerLevel | hp | breathingMastery | hasTalisman | timeOfDay | demonPresence | demonRank | swordSharpness | allyCount | bossHP | totalDamage | specialMoveReady" << endl;
 cout << "Example: 8 950 0.8 1 N 1 3 72.5 2 420 380 1" << endl;
 
-int exit;
-
+int pause;
 int slayerLevel, hp, hasTalisman, demonPresence, demonRank, allyCount, bossHP, totalDamage, specialMoveReady, finalHP;
 double breathingMastery, swordSharpness;
 char timeOfDay;
@@ -67,17 +66,17 @@ else if (timeOfDay != 'N' && timeOfDay != 'D')
 }
 else if (timeOfDay == 'N' && demonPresence == 1)
 {
-    gate = "silently";
+    gate = "Open silently";
 }
 else
 {
-    gate = "cautiously";
+    gate = "Opencautiously";
 }
 
 // Scene 3: Battle Strategy
 if (adv >= 100)
 {
-    strat = "Engage head on";
+    strat = "Engage head-on";
 }
 else if (adv >= 60 && adv < 100)
 {
@@ -104,10 +103,10 @@ else
 }
 
 cout << "[Scene 1] Rank: " << rank << " (power = " << fixed << setprecision(1) << power << ")" << endl;
-cout << "[Scene 2] Open " << gate << "." << endl;
+cout << "[Scene 2] " << gate << "." << endl;
 cout << "[Scene 3] " << strat << " (adv = " << fixed << setprecision(1) << adv << ")" << endl;
 cout << "[Scene 4] " << out << " (finalHP = " << finalHP << ")" << endl;
 
-cin >> exit;
+cin >> pause;
 return 0;
 }
